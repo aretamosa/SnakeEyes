@@ -29,7 +29,7 @@ namespace Domain
             _dice2 = new Dice();
         }
 
-        private void Play()
+        public void Play()
         {
             _dice1.Roll();
             _dice2.Roll();
@@ -45,7 +45,7 @@ namespace Domain
             }
         }
 
-        private void Restart()
+        public void Restart()
         {
             Initilize();
         }

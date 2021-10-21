@@ -17,9 +17,9 @@ namespace Domain
 
 
         private readonly Random _random = new Random();
-        public int Roll()
+        public void Roll()
         {
-            return _randomizer.Next(1, 7);
+            Dots = _randomizer.Next(1, 7);
         }
     }
 }
